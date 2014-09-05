@@ -1,0 +1,13 @@
+<h1>Superhero List</h1>
+	<ul>
+		<li><%= @superhero.name %></li>
+		<li><%= @superhero.cape %></li>
+		<li><%= @superhero.super_power %></li>
+		<li><%= image_tag(@superhero.image) do %></li>
+	</ul>
+	<% end %>
+
+
+<%= link_to 'Delete youre Hero', superhero_path(@superhero), method: :delete  %>
+
+<%= link_to 'Edit', edit_superhero_path(@superhero) %>

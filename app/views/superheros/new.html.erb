@@ -1,0 +1,20 @@
+<%= form_for @superhero do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :cape %>
+<%= f.text_field :cape %>
+<br>
+<%= f.label :super_power %>
+<%= f.text_area :super_power %>
+<br>
+<%= f.label :image %>
+<%= f.text_field :image %>
+
+<br>
+<%= f.submit "Create" %>
+
+<% end %>
+
+
